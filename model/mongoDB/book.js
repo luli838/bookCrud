@@ -14,7 +14,7 @@ const bookSchema = mongoose.Schema(
     year: {
       type: Number,
       required: true,
-      min: [1896, "Year must be al least 1896"],
+      min: [1700, "Year must be al least 1700"],
       max: [currentYear, `Year cannot exceed ${currentYear}`],
     },
     genre: { type: [String], required: true, trim: true },

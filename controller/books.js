@@ -110,7 +110,7 @@ export const bookController = {
           message: `Book Not Found`,
         });
       }
-      res.send(204);
+      res.send(200);
     } catch (err) {
       res.status(500).json({ success: false, message: err.message });
     }
